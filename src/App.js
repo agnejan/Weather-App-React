@@ -4,20 +4,20 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 export default function App() {
   return (
-    <div><div class="WeatherApp">
-            <form id="search-form">
-                <div class="row">
+    <div><div className="WeatherApp">
+            <form className="search-form">
+                <div className="row">
                     <div class ="col-8">
-                <input class="form-control form-control-lg shadow-sm border-0 rounded-pill " type="search"
-                    placeholder="Enter a city..." id="enter-a-city" />
+                <input className="form-control form-control-lg shadow-sm border-0 rounded-pill " type="search"
+                    placeholder="Enter a city..." />
                     </div>
-                    <div class="col-4">
-                        <button type="button" class= "btn btn-sucess w-100 rounded-pill border-0 shadow-sm" id="current-location-button">Current location</button>
+                    <div className="col-4">
+                        <button type="button" className= "btn btn-sucess w-100 rounded-pill border-0 shadow-sm current-location-button">Current location</button>
                     </div>
                 </div>
             </form>
             <h1>
-                <span id="city">Vilnius</span>, <span id="country">LT</span>
+                <span>Vilnius</span>, <span>LT</span>
             </h1>
             <h2>
                 10:55
@@ -26,76 +26,76 @@ export default function App() {
                 27 September, 2010
             </h3>
             <h4>
-               <i class="main-icon"><ReactAnimatedWeather
+               <i className="main-icon"><ReactAnimatedWeather
         icon="RAIN"
         color="grey"
         size={64}
         animate={true}
       /></i>
-                <span class="temperature">+19 </span><span className="units"><span class="active">°C
+                <span className="temperature">+19 </span><span className="units"><span className="active">°C
                     </span> | <span >°F</span></span>
             </h4>
             <li>
                 <ul>
-                    <span id="weather-description">Broken clouds</span>
+                    <span>Broken clouds</span>
                 </ul>
                 <ul>
-                    Humidity: <span id="humidity">82</span> %
+                    Humidity: <span>82</span> %
                 </ul>
                 <ul>
-                    Wind: <span id="wind">4 </span> m/s
+                    Wind: <span>4 </span> m/s
                 </ul>
             </li>
             <div>
-                <div class="next-week" id="next-week">
-                    <div class="row">
-                        <div class="col-2" id="hour1">Mon</div>
-                        <div class="col-2" id="hour2">Tue</div>
-                        <div class="col-2" id="hour3">Wed</div>
-                        <div class="col-2" id="hour4">Thu</div>
-                        <div class="col-2" id="hour5">Fri</div>
-                        <div class="col-2" id="hour6">Sat</div>
+                <div className="next-week" id="next-week">
+                    <div className="row">
+                        <div className="col-2" >Mon</div>
+                        <div className="col-2" >Tue</div>
+                        <div className="col-2" >Wed</div>
+                        <div className="col-2" >Thu</div>
+                        <div className="col-2" >Fri</div>
+                        <div className="col-2" >Sat</div>
                     </div>
-                    <div class="row">
-                        <div class="col-2"><span id="forecast1"></span>+10°C</div>
-                        <div class="col-2"><span id="forecast2"></span>+10°C</div>
-                        <div class="col-2"><span id="forecast3"></span>+10°C</div>
-                        <div class="col-2"><span id="forecast4"></span>+10°C</div>
-                        <div class="col-2"><span id="forecast5"></span>+10°C</div>
-                        <div class="col-2"><span id="forecast6"></span>+10°C</div>
+                    <div className="row">
+                        <div className="col-2"><span ></span>+10°C</div>
+                        <div className="col-2"><span ></span>+10°C</div>
+                        <div className="col-2"><span ></span>+10°C</div>
+                        <div className="col-2"><span ></span>+10°C</div>
+                        <div className="col-2"><span ></span>+10°C</div>
+                        <div className="col-2"><span ></span>+10°C</div>
                     </div>
-                    <div class="row">
-                        <div class="col-2 images"><i><ReactAnimatedWeather
+                    <div className="row">
+                        <div className="col-2 images"><i><ReactAnimatedWeather
         icon="RAIN"
         color="grey"
         size={64}
         animate={true}
       /></i></div>
-                         <div class="col-2 images"><i><ReactAnimatedWeather
+                         <div className="col-2 images"><i><ReactAnimatedWeather
         icon="CLEAR_DAY"
         color="grey"
         size={64}
         animate={true}
       /></i></div>
-                        <div class="col-2 images"><i><ReactAnimatedWeather
+                        <div className="col-2 images"><i><ReactAnimatedWeather
         icon="CLEAR_DAY"
         color="grey"
         size={64}
         animate={true}
       /></i></div>
-                         <div class="col-2 images"><i><ReactAnimatedWeather
+                         <div className="col-2 images"><i><ReactAnimatedWeather
         icon="CLEAR_DAY"
         color="grey"
         size={64}
         animate={true}
       /></i></div>
-                         <div class="col-2 images"><i><ReactAnimatedWeather
+                         <div className="col-2 images"><i><ReactAnimatedWeather
         icon="CLEAR_DAY"
         color="grey"
         size={64}
         animate={true}
       /></i></div>
-                         <div class="col-2 images"><i><ReactAnimatedWeather
+                         <div className="col-2 images"><i><ReactAnimatedWeather
         icon="CLEAR_DAY"
         color="grey"
         size={64}
