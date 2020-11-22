@@ -1,6 +1,6 @@
 
 import './App.css';
-import React from "react";
+
 
 export default function App() {
   let weatherData = {
@@ -16,63 +16,71 @@ export default function App() {
   };
 
   return (
-    <div className="WeatherApp">
-      <form>
-        <div className="row">
-          <div className="col-8">
-            <input
-              className=" search-form form-control form-control-lg shadow-sm border-0 rounded-pill "
-              type="search"
-              placeholder="Enter a city..."
-              autoComplete="off"
-            />
-          </div>
-          <div className="col-4">
-            <button
-              type="button"
-              className="current-location-button btn btn-sucess w-100 rounded-pill border-0 shadow-sm"
-            >
-              Current location
-            </button>
-          </div>
-        </div>
-      </form>
-      <div>
-        <h1>
-          <span className="city">{weatherData.city}</span>,{" "}
-          <span className="country">{weatherData.country}</span>
-        </h1>
-        <h2>{weatherData.time}</h2>
-        <h3>{weatherData.date}</h3>
-        <h4>
-          <img
-            src={weatherData.imgUrl}
-            className="main-icon"
-            alt={weatherData.description}
-          ></img>
-          <span className="temperature">{weatherData.temperature} </span>
-          <span className="units">
-            <a href="#" className="c-units" className="active">
-              °C
-            </a>{" "}
-            |{" "}
-            <a href="#" className="f-units">
-              °F
-            </a>
-          </span>
-        </h4>
-      </div>
-      <li>
-        <ul>
-          <span className="weather-description">{weatherData.description}</span>
-        </ul>
-        <ul>
-          Humidity: <span className="humidity">{weatherData.humidity}</span> %
-        </ul>
-        <ul>
-          Wind: <span className="wind">{weatherData.wind} </span> m/s
-        </ul>
-      </li>
-    </div>
-  );
+    <div><div class="WeatherApp">
+            <form id="search-form">
+                <div class="row">
+                    <div class ="col-8">
+                <input class="form-control form-control-lg shadow-sm border-0 rounded-pill " type="search"
+                    placeholder="Enter a city..." id="enter-a-city" />
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class= "btn btn-sucess w-100 rounded-pill border-0 shadow-sm" id="current-location-button">Current location</button>
+                    </div>
+                </div>
+            </form>
+            <h1>
+                <span id="city">Vilnius</span>, <span id="country">LT</span>
+            </h1>
+            <h2>
+                10:55
+            </h2>
+            <h3>
+                27 September, 2010
+            </h3>
+            <h4>
+               <i class="fas fa-cloud-sun-rain main-icon"></i>
+                <span class="temperature">+19 </span><span className="units"><span class="active">°C
+                    </span> | <span >°F</span></span>
+            </h4>
+            <li>
+                <ul>
+                    <span id="weather-description">Broken clouds</span>
+                </ul>
+                <ul>
+                    Humidity: <span id="humidity">82</span> %
+                </ul>
+                <ul>
+                    Wind: <span id="wind">4 </span> m/s
+                </ul>
+            </li>
+            <div>
+                <div class="next-week" id="next-week">
+                    <div class="row">
+                        <div class="col-2" id="hour1">Mon</div>
+                        <div class="col-2" id="hour2">Tue</div>
+                        <div class="col-2" id="hour3">Wed</div>
+                        <div class="col-2" id="hour4">Thu</div>
+                        <div class="col-2" id="hour5">Fri</div>
+                        <div class="col-2" id="hour6">Sat</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><span id="forecast1"></span>+10°C</div>
+                        <div class="col-2"><span id="forecast2"></span>+10°C</div>
+                        <div class="col-2"><span id="forecast3"></span>+10°C</div>
+                        <div class="col-2"><span id="forecast4"></span>+10°C</div>
+                        <div class="col-2"><span id="forecast5"></span>+10°C</div>
+                        <div class="col-2"><span id="forecast6"></span>+10°C</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
+                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
+                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
+                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
+                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
+                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
+                    </div>
+                </div>
+                <script src="src/index.js"></script>
+            </div> </div><footer><a href="https://github.com/agnejan/Weather-App-Project-2" target="blank">Open-source code</a> by Agne Januskeviciute</footer></div>
+    );
 }
