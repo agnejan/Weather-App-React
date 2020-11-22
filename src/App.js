@@ -1,20 +1,8 @@
-
 import './App.css';
+import ReactAnimatedWeather from "react-animated-weather";
 
 
 export default function App() {
-  let weatherData = {
-    city: "Vilnius",
-    country: "LT",
-    temperature: 19,
-    date: "9 September, 2020",
-    time: "10:00",
-    description: "Sunny",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
-    humidity: 10,
-    wind: 3
-  };
-
   return (
     <div><div class="WeatherApp">
             <form id="search-form">
@@ -38,7 +26,12 @@ export default function App() {
                 27 September, 2010
             </h3>
             <h4>
-               <i class="fas fa-cloud-sun-rain main-icon"></i>
+               <i class="main-icon"><ReactAnimatedWeather
+        icon="RAIN"
+        color="grey"
+        size={64}
+        animate={true}
+      /></i>
                 <span class="temperature">+19 </span><span className="units"><span class="active">°C
                     </span> | <span >°F</span></span>
             </h4>
@@ -72,15 +65,45 @@ export default function App() {
                         <div class="col-2"><span id="forecast6"></span>+10°C</div>
                     </div>
                     <div class="row">
-                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
-                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
-                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
-                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
-                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
-                        <div class="col-2"><i class="fas fa-cloud-sun-rain images"></i></div>
+                        <div class="col-2 images"><i><ReactAnimatedWeather
+        icon="RAIN"
+        color="grey"
+        size={64}
+        animate={true}
+      /></i></div>
+                         <div class="col-2 images"><i><ReactAnimatedWeather
+        icon="CLEAR_DAY"
+        color="grey"
+        size={64}
+        animate={true}
+      /></i></div>
+                        <div class="col-2 images"><i><ReactAnimatedWeather
+        icon="CLEAR_DAY"
+        color="grey"
+        size={64}
+        animate={true}
+      /></i></div>
+                         <div class="col-2 images"><i><ReactAnimatedWeather
+        icon="CLEAR_DAY"
+        color="grey"
+        size={64}
+        animate={true}
+      /></i></div>
+                         <div class="col-2 images"><i><ReactAnimatedWeather
+        icon="CLEAR_DAY"
+        color="grey"
+        size={64}
+        animate={true}
+      /></i></div>
+                         <div class="col-2 images"><i><ReactAnimatedWeather
+        icon="CLEAR_DAY"
+        color="grey"
+        size={64}
+        animate={true}
+      /></i></div>
                     </div>
                 </div>
                 <script src="src/index.js"></script>
             </div> </div><footer><a href="https://github.com/agnejan/Weather-App-Project-2" target="blank">Open-source code</a> by Agne Januskeviciute</footer></div>
     );
-}
+};
