@@ -104,6 +104,6 @@ export default function App() {
                     </div>
                 </div>
                 <script src="src/index.js"></script>
-            </div> </div><footer><a href="https://github.com/agnejan/Weather-App-Project-2" target="blank">Open-source code</a> by Agne Januskeviciute</footer></div>
+            </div> </div><footer><a href="https://github.com/agnejan/Weather-App-React" target="blank">Open-source code</a> by Agne Januskeviciute</footer></div>
     );
 };
