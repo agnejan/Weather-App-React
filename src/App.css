@@ -1,5 +1,4 @@
 .WeatherApp {
-  margin-top: 10px;
   text-align: center;
   margin: 0 auto;
   border: 1px solid #949494;
@@ -10,9 +9,6 @@
   display: block;
 }
 
-.container {
-  margin-top: 20px;
-}
 .search-form {
   display: block;
   margin: 0 auto;
@@ -58,11 +54,6 @@ h4 {
   font-size: 20px;
 }
 
-.main-icon {
-  position: relative;
-  font-size: 40px;
-}
-
 li {
   color: #757575;
   display: block;
@@ -103,5 +94,5 @@ li:first-letter {
 footer {
   display: block;
   text-align: center;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
 }

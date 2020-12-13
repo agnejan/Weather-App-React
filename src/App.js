@@ -6,6 +6,7 @@ import Loader from "react-loader-spinner";
 import WeatherInfo from "./WeatherInfo";
 
 
+
 export default function App(props) {
     const [city, setCity] = useState(props.defaultCity);
     const [weatherData, setWeatherData] = useState({ready: false});
@@ -19,6 +20,7 @@ function handleResponse(response) {
         temperature: response.data.main.temp,
         wind: response.data.wind.speed,
         description: response.data.weather[0].description,
+        icon: response.data.weather[0].icon,
         humidity: response.data.main.humidity
      } );
     
