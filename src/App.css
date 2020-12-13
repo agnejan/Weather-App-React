@@ -1,4 +1,5 @@
 .WeatherApp {
+  margin-top: 10px;
   text-align: center;
   margin: 0 auto;
   border: 1px solid #949494;
@@ -6,6 +7,7 @@
   max-width: 630px;
   border-radius: 10px;
   font-family: "Quicksand", sans-serif;
+  display: block;
 }
 
 .container {
@@ -40,12 +42,9 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-h3 {
-  font-size: 20px;
-  margin: 0;
+  font-size: 25px;
+  line-height: 40px;
+  margin-bottom: 45px;
 }
 h4 {
   display: block;
@@ -69,7 +68,6 @@ li {
   display: block;
   text-align: center;
   margin: 10px;
-
 }
 ul {
   list-style: none;
@@ -80,7 +78,7 @@ li:first-letter {
 }
 
 .temperature {
-  font-size: 50px;
+  font-size: 64px;
   font-weight: bold;
   line-height: 1;
   text-align: middle;
@@ -96,6 +94,10 @@ li:first-letter {
   display: block;
   height: 60px;
   width: 60px;
+}
+
+.loader {
+  text-align: center;
 }
 
 footer {
