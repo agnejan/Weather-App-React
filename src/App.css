@@ -76,18 +76,6 @@ li:first-letter {
   margin-left: 10px;
 }
 
-.next-week {
-  margin-top: 30px;
-  color: #757575;
-  text-align: center;
-}
-
-.images {
-  display: block;
-  height: 60px;
-  width: 60px;
-}
-
 .loader {
   text-align: center;
 }
