@@ -45,7 +45,7 @@ export default function App(props) {
         <div className="WeatherApp">
           <form onSubmit={handleSubmit} className="search-form">
             <div className="row">
-              <div class="col-8">
+              <div class="col-12">
                 <input
                   className="form-control form-control-lg shadow-sm border-0 rounded-pill "
                   type="search"
@@ -53,14 +53,6 @@ export default function App(props) {
                   autoFocus="on"
                   onChange={handleCityChange}
                 />
-              </div>
-              <div className="col-4">
-                <button
-                  type="button"
-                  className="btn btn-sucess w-100 rounded-pill border-0 shadow-sm current-location-button"
-                >
-                  Current location
-                </button>
               </div>
             </div>
           </form>
