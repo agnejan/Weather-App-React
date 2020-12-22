@@ -83,5 +83,8 @@ li:first-letter {
 footer {
   display: block;
   text-align: center;
-  margin-bottom: 300px;
+}
+
+html {
+  height: 100%;
 }
