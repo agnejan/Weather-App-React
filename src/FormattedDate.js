@@ -35,7 +35,6 @@ export default function FormattedDate(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  let year = props.date.getFullYear();
 
   return (
     <div>
