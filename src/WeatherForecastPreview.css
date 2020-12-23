@@ -1,8 +1,8 @@
 .WeatherForecastPreview {
-  margin: 20px 0;
   text-align: center;
 }
 
 .WeatherForecastPreview canvas {
   display: block;
+  margin: 10px auto;
 }
