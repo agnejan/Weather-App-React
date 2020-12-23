@@ -15,15 +15,6 @@
   border-radius: 80px;
 }
 
-.current-location-button {
-  margin-top: 7px;
-  border-radius: 80px;
-}
-
-.current-location-button:hover {
-  background: #cccccc9d;
-}
-
 h1,
 h2,
 h3,
@@ -87,4 +78,25 @@ footer {
 
 html {
   height: 100%;
+}
+.fahrenheitSmall {
+  font-size: 10px;
+}
+
+.celsiusSmall {
+  font-size: 10px;
+}
+
+.WeatherForecastPreview {
+  text-align: center;
+}
+
+.WeatherForecastPreview canvas {
+  display: block;
+  margin: 10px auto;
+}
+
+.main-icon canvas {
+  position: relative;
+  top: 11px;
 }

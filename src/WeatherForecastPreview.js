@@ -1,6 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
-import "./WeatherForecastPreview.css";
+
+import "./App.css";
 
 export default function WeatherForecastPreview(props) {
   function hours() {
